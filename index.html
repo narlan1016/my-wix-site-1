@@ -3,35 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Бақытнұр Нарлан</title>
+    <title>Бақытнұр Нарлан</title>
     <style>
+        /* 全局样式 */
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f9f9f9;
+            background: linear-gradient(to right, #f8c0c8, #fbe7f2);
             color: #333;
         }
+
+        /* 顶部导航栏 */
         nav {
-            margin-top: 20px;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         nav a {
-            margin: 0 10px;
             text-decoration: none;
-            color: #007bff;
+            color: #000;
             font-weight: bold;
+            font-size: 18px;
         }
+
         nav a:hover {
-            text-decoration: underline;
+            color: #d1477f;
+        }
+
+        /* 主内容区域 */
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to bottom, #fad0c4, #ffd1ff);
+        }
+
+        .header h1 {
+            font-size: 48px;
+            color: #7a004d;
+        }
+
+        .header p {
+            font-size: 20px;
+            color: #555;
+        }
+
+        /* 网格布局 */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grid-item {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .grid-item h3 {
+            color: #7a004d;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is the homepage of my site.</p>
+
+    <!-- 导航栏 -->
     <nav>
-        <a href="Бастапқы бет _ My Site 8.html">бастыбет</a>
-        <a href="contact.html">Contact</a>
-        <a href="services.html">Services</a>
+        <a href="#home">Бастапқы бет</a>
+        <a href="#education">Білім беру</a>
+        <a href="#research">Ғылыми зерттеу жұмыстары</a>
+        <a href="#social">Қоғамдық жұмыстар</a>
+        <a href="#contact">Байланыс ақпарат</a>
     </nav>
+
+    <!-- 头部内容 -->
+    <div class="header">
+        <h1>Бақытнұр Нарлан</h1>
+        <p>Біздің сайтымызға қош келдіңіздер!</p>
+    </div>
+
+    <!-- 主内容部分 -->
+    <div class="grid">
+        <div class="grid-item">
+            <h3>Білім беру</h3>
+            <p>Білім беру туралы ақпарат</p>
+        </div>
+        <div class="grid-item">
+            <h3>Ғылыми зерттеу жұмыстары</h3>
+            <p>Ғылыми жобалар</p>
+        </div>
+        <div class="grid-item">
+            <h3>Қоғамдық жұмыстар</h3>
+            <p>Қоғамдық қызметтер туралы</p>
+        </div>
+        <div class="grid-item">
+            <h3>Байланыс ақпарат</h3>
+            <p>Email: example@example.com</p>
+        </div>
+    </div>
+
 </body>
 </html>
